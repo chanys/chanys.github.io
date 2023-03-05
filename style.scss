@@ -261,6 +261,10 @@ nav {
     font-style: italic;
   }
 
+  @media #{$large} {
+        @include grid(12,6); // increase 6 if you want to make it wider
+  }
+	
   .comments {
     margin-top: 10px;
   }
