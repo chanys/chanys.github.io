@@ -3,8 +3,6 @@ layout: post
 title: Techniques to Enable Deep Neural Networks
 ---
 
-# Techniques to Enable Deep Neural Networks
-
 ## Skipped Connection
 
 One important technique that enables building very deep neural networks is Skipped connection (a.k.a residual connection). 
@@ -38,4 +36,4 @@ We also define $\gamma$ and $\beta$ as network learnable parameters. We then cal
 Note that without the final rescaling, we will always be forcing the output $y^{bt}$ to have mean 0 and standard deviation 1. 
 However, we only want this distribution at the onset of training, and wish to allow the network the flexibility to 
 move away from this initial distribution as training progresses. 
-So, layer normalization also makes use of learnable parameters $\gamma$ and $\beta$
+So, layer normalization also makes use of learnable parameters $\gamma$ and $\beta$.
