@@ -1,3 +1,8 @@
+---
+layout: post
+title: Techniques to Enable Deep Neural Networks
+---
+
 # Techniques to Enable Deep Neural Networks
 
 ## Skipped Connection
