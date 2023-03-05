@@ -69,8 +69,7 @@ to project each $x_i$ into $q_i$, $k_i$, and $v_i$:
 
 Next, we calculate dot-products between the query vectors and key vectors as a measure of affinity scores. 
 * As an example, $w^{'}_{4,1} = q_4 \cdot k_1$ represents the affinity of $x_4$ with $x_1$. 
-* Referring to the above Figure, performing dot-products using $q_4$ give us $[w^{'}_{4,1}, w^{'}_{4,2}, w^{'}_{4,3}, w^{'}_{4,4}]$ 
-which represents the affinity of $x_4$ with $x_1, x_2, x_3$, and $x_4$ respectively.
+* Referring to the above Figure, performing dot-products using $q_4$ give us [w^{'}_{4,1}, w^{'}_{4,2}, w^{'}_{4,3}, w^{'}_{4,4}] which represents the affinity of $x_4$ with $x_1, x_2, x_3$, and $x_4$ respectively.
 
 Once we have the dot-product score matrix $W^{'}$, we apply softmax on each individual row to obtain the $W$ softmax weight matrix. We then perform a weighted sum over the value embeddings to produce the hidden output representations of the attention layer, e.g. $h_4 = \sum_{j} w_{4,j} v_j$.
 
