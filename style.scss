@@ -6,12 +6,6 @@
 //
 
 
-@import "{{ site.theme }}";
-
-.inner {
-  max-width: 75%;
-}
-
 
 
 @import "reset";
@@ -270,6 +264,8 @@ nav {
     font-style: italic;
   }
 
+  max-width: 95%;
+	
   @media #{$large} {
         @include grid(12,6); // increase 6 if you want to make it wider
   }
