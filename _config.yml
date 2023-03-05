@@ -85,5 +85,5 @@ exclude:
   - README.md
   - CNAME
   
-layout: wide
+classes: wide
 
