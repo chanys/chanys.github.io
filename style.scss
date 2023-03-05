@@ -5,6 +5,15 @@
 // IMPORTS
 //
 
+
+@import "{{ site.theme }}";
+
+.inner {
+  max-width: 75%;
+}
+
+
+
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
