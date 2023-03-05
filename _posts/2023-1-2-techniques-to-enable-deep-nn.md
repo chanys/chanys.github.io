@@ -3,6 +3,8 @@ layout: post
 title: Techniques to Enable Deep Neural Networks
 ---
 
+To train deep neural networks, we require techniques to stabilize training and reduce problems such as vanishing gradients. In this article, we discuss Skipped Connection and Layer Normalization.
+
 ## Skipped Connection
 
 One important technique that enables building very deep neural networks is Skipped connection (a.k.a residual connection). 
