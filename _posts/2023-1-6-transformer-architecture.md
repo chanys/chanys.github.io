@@ -3,7 +3,8 @@ layout: post
 title: Transformer Architecture Explained
 ---
 
-In 2018, Two transformer models were released that combined self-attention with transfer learning capabilities:
+In 2018, Two transformer models were released that combined self-attention with transfer learning capabilities, 
+opening the floodgate of using Transformers in NLP and propelled introduction of subsequent language models:
 * GPT: "Improving language understanding by generative pre-training" (Radford et al. 2018). Uses decoder part of Transformer to predict words in an autoregressive manner.
 * BERT: "BERT: pre-training of deep bidirectional transformers for language understanding" (Devlin et al. 2018). Uses encoder part of Transformer and performs masked language modeling (MLM). 
 These models open the floodgate of using Transformers in NLP and propelled introduction of subsequent language models. 
