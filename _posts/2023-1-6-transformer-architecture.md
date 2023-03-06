@@ -256,9 +256,9 @@ class TransformerBlock(nn.Module):
 
 Some notes:
 * PyTorch `nn.Sequential` vs `nn.ModuleList`:
-   	* In the above code, we used an object of type `nn.Sequential`. This has a `forward()` method. 
+   * In the above code, we used an object of type `nn.Sequential`. This has a `forward()` method. 
     When defining blocks within `nn.Sequential`, we must be careful to ensure that the output size of a 
     block matches the input size of the following block. 
-   	* On the other hand, `nn.ModuleList` does not have a `forward()` method, i.e. there is no connection between each of the `nn.Module` 
+   * On the other hand, `nn.ModuleList` does not have a `forward()` method, i.e. there is no connection between each of the `nn.Module` 
     that it stores. The advantage of using `nn.ModuleList` instead of using conventional Python lists to store modules, 
     is that Pytorch is “aware” of the existence of the modules within an `nn.ModuleList`.
