@@ -197,7 +197,7 @@ We are now ready to put everything together in a Transformer block, which we ill
 We now describe the flow of inputs to outputs in the Transformer block:
 * Given an input tokenized text sequence, we first convert each token to its integer index in the vocabulary, producing `idx` (a list of integers). 
 We use `idx` to index into the embedding table, encode the positions using a separate position embedding table, 
-then aggregate them to produce the inputs to the first [layer normalization](https://github.com/chanys/chanys.github.io/blob/master/_posts/2023-1-2-techniques-to-enable-deep-nn.md#layer-normalization) layer. A sample code snippet could be as follows:
+then aggregate them to produce the inputs to the first [layer normalization](https://chanys.github.io/techniques-to-enable-deep-nn#layer-normalization) layer. A sample code snippet could be as follows:
     ```
     self.token_embedding_table = nn.Embedding(vocab_size, embed_size)
     self.position_embedding_table = nn.Embedding(seq_len, embed_size)
@@ -209,7 +209,7 @@ then aggregate them to produce the inputs to the first [layer normalization](htt
         x = input_emb + pos_emb
     ```
 * The inputs are then passed through a layer normalization layer, followed by a multi-head attention layer. 
-The outputs are then aggregated with a [skipped connection](https://github.com/chanys/chanys.github.io/blob/master/_posts/2023-1-2-techniques-to-enable-deep-nn.md#skipped-connection) (a.k.a. residual connection). A sample code snippet is as follows:
+The outputs are then aggregated with a [skipped connection](https://chanys.github.io/techniques-to-enable-deep-nn#skipped-connection) (a.k.a. residual connection). A sample code snippet is as follows:
    ```
     def __init__(self, embed_size, no_of_heads):
         head_size = embed_size // no_of_heads
