@@ -86,7 +86,6 @@ thereby restricting the weighted sum to just focusing on a single $x_j$. To miti
 the authors of the self-attention paper use **scaled dot product** in self-attention: $\frac{x_i^T x_j}{\sqrt{K}}$, 
 where $K$ is the length (dimensionality) of vector $x$.
 * To understand why we scale by a function of $K$, recall that in statistics, if $X$ and $Y$ are two independent random variables, then:
-   * ref https://ai.stackexchange.com/questions/21237/why-does-this-multiplication-of-q-and-k-have-a-variance-of-d-k-in-scaled 
    * $\text{Var}(XY) = (\text{Var}(X) + \mathbb{E}[X]^2) (\text{Var}(Y) + \mathbb{E}[Y]^2) - \mathbb{E}[X]^2 \mathbb{E}[Y]^2$
 * Then, given a pair of vectors $x_i$ and $x_j$ (both having $K$ dimensions or components) where each vector component is independent from one another, 
 and follows a distribution with 0 mean and 1 variance. 
