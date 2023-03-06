@@ -3,6 +3,8 @@ layout: post
 title: Information Retrieval Evaluation Metrics
 ---
 
+We define two common information retrieval (IR) metrics: MAP@K and NDCG.
+
 ## MAP@K
 Mean Average Precision at K (MAP@K): are the predicted items relevant? Are the most relevant items on top?
 * MAP of a set of queries = $\frac{\sum_{q=1}^{Q}AP(q)}{Q}$
