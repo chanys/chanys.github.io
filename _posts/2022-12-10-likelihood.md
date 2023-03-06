@@ -3,7 +3,9 @@ layout: post
 title: Likelihood based Generative Models
 ---
 
-We perform function approximate, by learning $\theta$ so that $p_{\theta}(x) \approx p_{\text{data}}(x)$. That is, given any particular sample $x$, the probability estimated by your model for $x$ approximates the real ground truth probability.
+When training language models, we optimize for the likelihood of the underlying training corpus. In this article, we describe this likelihood function.
+
+We perform function approximation, by learning $\theta$ so that $p_{\theta}(x) \approx p_{\text{data}}(x)$. That is, given any particular sample $x$, the probability estimated by your model for $x$ approximates the real ground truth probability.
 We want to fit distribution (the distribution is the data). We want to find a model that can minimize the loss of fidelity in the distribution fit: 
 $$\text{arg-min}_{\theta} \text{ loss}(\theta, x^{(1)}, \ldots, x^{(n)}) = \frac{1}{n} \sum_{i=1}^{n} - \text{log } p_{\theta}(x^{(i)})$$
 	
