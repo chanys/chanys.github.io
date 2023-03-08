@@ -25,38 +25,13 @@ Given the string "The big brown fox jumps over the box and ox":
 * First split into words and tag on `</w>` at the end of each word like so: `["The</w>", "big</w>", "brown</w>", "fox</w>", "jumps</w>", "over</w>", "the</w>", "box</w>", "and</w>", "ox</w>"]`.
 * Break up the words into individual characters and count their occurrence frequency:
    * `[T, h, e, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, o, x, </w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, h, e, </w>, b, o, x, </w>, a, n, d, </w>, o, x, </w>]`
-   
-   |  |  |  |  |
-     |:--:|:--:|:--:|:--:|
-	 |w:8| T:1 | a:1 | b:3 | 	 
-	 | d:1 | e:3 | f:1 | g:1 | 	 
-	 | h:2 | i:1 | j:1 | m:1 |
-	 | o:5 | p:1 | r:2 | s:1 |
-     |t:1|u:1|v:1|	 w:1|
-	 |x:3|n:2|||
+   * `[w:8, T:1, a:1, b:3, d:1, e:3, f:1, g:1, h:2, i:1, j:1, m:1, o:5, p:1, r:2, s:1, t:1, u:1, v:1, w:1, x:3, n:2]`
 * Merge the most frequent consecutive character pair. Here, "ox" and "x</w>" are the most frequent. Let's just choose to merge "ox" (which occurs 3 times). We (i) capture this merge rule, (ii) minus off the frequency of "ox" from the frequency of its individual components, resulting in the following updated frequency table and list:
-	*  `[T, h, e, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, ox, </w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, h, e, </w>, b, ox, </w>, a, n, d, </w>, ox, </w>]`
-	
-   | Frequency | Frequency | Frequency | Frequency |
-   |:--:|:--:|:--:|:--:|
-   |w:8| T:1 | a:1 | b:3 | 	 
-   |d:1 | e:3 | f:1 | g:1 | 	 
-   |h:2 | i:1 | j:1 | m:1 |
-   |**o:5-3=2** | p:1 | r:2 | s:1 |
-   |t:1|u:1|v:1|	 w:1|
-   |**x:3-3=0**|n:2|**ox:3**||
+   * `[T, h, e, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, ox, </w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, h, e, </w>, b, ox, </w>, a, n, d, </w>, ox, </w>]`
+   * `[w:8, T:1, a:1, b:3, d:1, e:3, f:1, g:1, h:2, i:1, j:1, m:1, **o:5-3=2**, p:1, r:2, s:1, t:1, u:1, v:1, w:1, **x:3-3=0**, n:2, **ox:3**]'
 * Next, we merge `("ox", "</w>")` and then merge `(h, e)`, resulting in the following updates:
-   *  `[T, he, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, ox</w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, he, </w>, b, ox</w>, a, n, d, </w>, ox</w>]`
-
-   | Frequency | Frequency | Frequency | Frequency |
-   |:--:|:--:|:--:|:--:|
-   |**w:8-3=5**| T:1 | a:1 | b:3 | 	 
-   |d:1 | **e:3-2=1** | f:1 | g:1 | 	 
-   |**h:2-2=0** | i:1 | j:1 | m:1 |
-   |o:2 | p:1 | r:2 | s:1 |
-   |t:1|u:1|v:1|	 w:1|
-   |x:0|n:2|**ox:3-3=0**|ox\<\/w\>:3|
-   |**he:2**|||
+   * `[T, he, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, ox</w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, he, </w>, b, ox</w>, a, n, d, </w>, ox</w>]`
+   * `[**w:8-3=5**, T:1, a:1, b:3, d:1, **e:3-2=1**, f:1, g:1, **h:2-2=0**, i:1, j:1, m:1, o:2, p:1, r:2, s:1, t:1, u:1, v:1, w:1, x:0, n:2, **ox:3-3=0**, ox</w>:3, **he:2**]'
    
 We stop the iterative pairwise merging process when we have done a pre-defined number of merges, or when we have reached a certain vocabulary size. In general, the vocabulary size will increase at the beginning (as above), before decreasing. In the example above, if we stop now, we will have captured 3 merging rules in order: `(o, x), ("ox", "</w>"), (h, e)`.
 
