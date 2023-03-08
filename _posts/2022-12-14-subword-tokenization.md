@@ -26,7 +26,7 @@ Given the string "The big brown fox jumps over the box and ox":
 * Break up the words into individual characters and count their occurrence frequency:
    * `[T, h, e, </w>, b, i, g, </w>, b, r, o, w, n, </w>, f, o, x, </w>, j, u, m, p, s, </w>, o, v, e, r, </w>, t, h, e, </w>, b, o, x, </w>, a, n, d, </w>, o, x, </w>]`
    
-   | Frequency | Frequency | Frequency | Frequency |
+   |  |  |  |  |
      |:--:|:--:|:--:|:--:|
 	 |w:8| T:1 | a:1 | b:3 | 	 
 	 | d:1 | e:3 | f:1 | g:1 | 	 
