@@ -5,7 +5,7 @@ title: BEIR Dataset for Zero-shot Evaluation of IR Models
 
 The BEIR information retrievel (IR) dataset was introduced in the paper "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models", published in 2021. The paper puts together 18 publicly available datasets, to evaluate 10 IR models. The task is: given a query, retrieve the relevant passages/documents as a ranked list. Evaluate using nDCG@10. 
 
-#### Datasets
+## Datasets
 The dataset domains and datasets are:
 * **Bio-medical IR**: Given a biomedical scientific query, retrieve bio-medical documents as output.
  * TREC-COVID: An ad-hoc search challenge based on the CORD-19 dataset containing scientific articles related to the COVID-19 pandemic.
@@ -35,7 +35,7 @@ The dataset domains and datasets are:
    * Climate-FEVER: Climate claims verified against Wikipedia articles.
    * SciFact: Verifies scientific claims against scientific paper abstracts. 
 
-#### Evaluation
+## Evaluation
 The following IR models perform well:
 * BM25 is a strong baseline.
 * DocT5query: First train a T5 (base) sequence-to-sequence model (on MS MARCO dataset) to generate queries when given a document. Then concatenate these generated queries (up to 40) to each original document in the retrieval set. Then index these expanded documents using BM25. This improves **1.6%** over BM25.
