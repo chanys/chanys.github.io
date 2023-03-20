@@ -25,29 +25,18 @@ The following is an organization of my blog posts:
 * [Perplexity](https://chanys.github.io/perplexity/) is commonly used as an intrinsic evaluation of a language model
 * [Likelihood based Generative Models](https://chanys.github.io/likelihood/)
 
-|Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
-| A   | B  | C  | D  | E         |
-
 ### Dialog Models
 
 |Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
+|:---|:---|:---|:---|:---|
 |[TransferTransfo](https://chanys.github.io/huggingface-dialog-model/)|~117M|Jan-2019|Hugging Face|Open-source dialog model that takes on persona|
 |[InstructGPT](https://chanys.github.io/chatgpt/)|175G|Sept-2020|OpenAI|Leveraged human preferences, reward modeling, and reinforcement learning to improve GPT-3 models. Predecessor of ChatGPT|
 |[LaMDA](https://chanys.github.io/lamda/)|137B|Jan-2022|Google|Fine-tune decoder model for quality, safety, and groundedness|
 
-
-|Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
-|[TransferTransfo]((https://chanys.github.io/huggingface-dialog-model/))|117M|Jan-2019|Hugging Face|Open-source dialog model that takes on persona|
-|InstructGPT|175G|Sept-2020|OpenAI|Leveraged human preferences, reward modeling, and reinforcement learning to improve GPT-3 models. Predecessor of ChatGPT|
-|LaMDA|137B|Jan-2022|Google|Fine-tune decoder model for quality, safety, and groundedness|
-
 ### Encoder Language Models
 
 |Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
+|:---|:---|:---|:---|:---|
 |[BERT](https://chanys.github.io/bert/)|110M, 340M|Oct-2018|Google|Introduced masked language modeling (MLM)|
 |[RoBERTa](https://chanys.github.io/roberta/)|125M, 355M|Jul-2019|UWash, Meta|Replication of BERT with more robust training
 |[XLM](https://chanys.github.io/xlm/)|XLM-100 has 570M|Jan-2019|Meta|Cross-lingual model that uses translation language modeling (TLM) and MLM|
@@ -57,7 +46,7 @@ The following is an organization of my blog posts:
 ### Decoder Language Models
 
 |Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
+|:---|:---|:---|:---|:---|
 |[GPT-1](https://chanys.github.io/gpt1/)|117M|Jun-2018|OpenAI|Demonstrated pretraining Transformers enable effective transfer learning to downstream NLP tasks|
 |[GPT-2](https://chanys.github.io/gpt2/)|1.5B|Feb-2019|OpenAI|Focused on zero-shot in-context prompting|
 |[GPT-3](https://chanys.github.io/gpt3/)|175B|Jul-2020|OpenAI|Focused on one-shot and few-shot prompting|
@@ -70,7 +59,7 @@ The following is an organization of my blog posts:
 ### Encoder-Decoder Language Models
 
 |Model|Size|Date|Organization|Description|
-|:---:|:--:|:--:|:--:|:---------:|
+|:---|:---|:---|:---|:---|
 |[T5](https://chanys.github.io/t5/)|11B|Oct-2019|Google|First paper to show text-to-text Transformer achieves SOTA results. Also shows span corruption works well.|
 |[BART](https://chanys.github.io/bart/)|406M|Oct-2019|Meta|Similar to T5. But T5 predicts only the masked spans, whereas BART predicts the complete text|
 |[mT5](https://chanys.github.io/mt5/)|13B|Oct-2020|Google|Multilingual version of the T5 model|
