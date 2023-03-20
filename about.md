@@ -39,7 +39,7 @@ The following is an organization of my blog posts:
 
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
-|TransferTransfo|~117M|Jan-2019|Hugging Face|Open-source dialog model that takes on persona|
+|[TransferTransfo]((https://chanys.github.io/huggingface-dialog-model/))|117M|Jan-2019|Hugging Face|Open-source dialog model that takes on persona|
 |InstructGPT|175G|Sept-2020|OpenAI|Leveraged human preferences, reward modeling, and reinforcement learning to improve GPT-3 models. Predecessor of ChatGPT|
 |LaMDA|137B|Jan-2022|Google|Fine-tune decoder model for quality, safety, and groundedness|
 
