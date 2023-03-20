@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi! I am Dr. Yee Seng Chan and this is my blog where I write about Artificial Intelligence and Machine Learning, focusing on Natural Language Processing (NLP) technologies such as large language models, i.e Transformers such as ChatGPT, LaMDA, BERT, GPT, etc..
+Hi! I am Dr. Yee Seng Chan and this is my blog where I write about Artificial Intelligence and Machine Learning, focusing on Natural Language Processing (NLP) technologies such as large language models, i.e Transformers such as ChatGPT, LaMDA, BERT, GPT, etc.
 
 ## Short Bio
 I did a PhD in NLP, followed by a Post-doc at UIUC. I then worked at Raytheon BBN Technologies for many years. BBN is a R&D company that was awarded the National Medal of Technology and Innovation in 2013. To get out of my comfort zone, I left BBN to join a startup, which focused on applying NLP to tackle Search Engine Optimization (SEO).
