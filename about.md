@@ -25,6 +25,10 @@ The following is an organization of my blog posts:
 * [Perplexity](https://chanys.github.io/perplexity/) is commonly used as an intrinsic evaluation of a language model
 * [Likelihood based Generative Models](https://chanys.github.io/likelihood/)
 
+|Model|Size|Date|Organization|Description|
+|:---:|:--:|:--:|:--:|:---------:|
+| A   | B  | C  | D  | E         |
+
 ### Dialog Models
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
