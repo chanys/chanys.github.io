@@ -30,6 +30,7 @@ The following is an organization of my blog posts:
 | A   | B  | C  | D  | E         |
 
 ### Dialog Models
+
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
 |[TransferTransfo](https://chanys.github.io/huggingface-dialog-model/)|~117M|Jan-2019|Hugging Face|Open-source dialog model that takes on persona|
@@ -44,6 +45,7 @@ The following is an organization of my blog posts:
 |LaMDA|137B|Jan-2022|Google|Fine-tune decoder model for quality, safety, and groundedness|
 
 ### Encoder Language Models
+
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
 |[BERT](https://chanys.github.io/bert/)|110M, 340M|Oct-2018|Google|Introduced masked language modeling (MLM)|
@@ -53,6 +55,7 @@ The following is an organization of my blog posts:
 |[ELECTRA](https://chanys.github.io/electra/)|110M, 335M|Mar-2020|Stanford, Google|Introduced "replaced token detection" pretraining, that is more sample efficient than MLM|
 
 ### Decoder Language Models
+
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
 |[GPT-1](https://chanys.github.io/gpt1/)|117M|Jun-2018|OpenAI|Demonstrated pretraining Transformers enable effective transfer learning to downstream NLP tasks|
@@ -65,6 +68,7 @@ The following is an organization of my blog posts:
 |[FLAN-PaLM](https://chanys.github.io/flan-palm/)|540B|Oct-2022|Google|Multitask instruction fine-tuning on PaLM. Likely the best decoder-only model at time of publication, but probably under-trained|
 
 ### Encoder-Decoder Language Models
+
 |Model|Size|Date|Organization|Description|
 |:---:|:--:|:--:|:--:|:---------:|
 |[T5](https://chanys.github.io/t5/)|11B|Oct-2019|Google|First paper to show text-to-text Transformer achieves SOTA results. Also shows span corruption works well.|
