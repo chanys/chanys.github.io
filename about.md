@@ -51,6 +51,7 @@ The following is an organization of my blog posts:
 |[GPT-1](https://chanys.github.io/gpt1/)|117M|Jun-2018|OpenAI|Demonstrated pretraining Transformers enable effective transfer learning to downstream NLP tasks|
 |[GPT-2](https://chanys.github.io/gpt2/)|1.5B|Feb-2019|OpenAI|Focused on zero-shot in-context prompting|
 |[GPT-3](https://chanys.github.io/gpt3/)|175B|Jul-2020|OpenAI|Focused on one-shot and few-shot prompting|
+|[MPNet](https://chanys.github.io/mpnet/)|110M|Apr-2020|Nanjing University and Microsoft|Fused and improved on MLM + PLM for pretraining|
 |[FLAN](https://chanys.github.io/flan/)|137B|Sept-2021|Google|Shows that multitask fine-tuning of LaMDA-PT improves zero-shot generalization to new tasks|
 |[GLaM](https://chanys.github.io/glam/)|1.2T|Dec-2021|Google|Decoder-only language model that does conditional computation using mixture of experts (MoE)|
 |[Chinchilla](https://chanys.github.io/chinchilla/)|70B|Mar-2022|DeepMind|Shows that number of training tokens should scale equally with model size. Outperforms GPT-3 (175B)|
