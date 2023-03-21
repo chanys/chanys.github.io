@@ -69,6 +69,7 @@ The following is an organization of my blog posts:
 |[Switch](https://chanys.github.io/switch/)|3.8B|Jan-2021|Google|Based on T5, but the original dense FFN is replaced with a sparse Switch FFN layer.|
 |[T0](https://chanys.github.io/t0/)|11B|Oct-2021|Hugging Face and others|Multitask fine-tuning on T5 improves zero-shot performance on unseen tasks. Performs better than GPT-3 (175B)|
 |[UL2](https://chanys.github.io/ul2/)|20B|May-2022|Google|Uses a mixture of denoisers for pretraining|
+|[Tk-INSTRUCT](https://chanys.github.io/tkinstruct/)|11B|Apr-2022|University of Washington and others|T5 fine-tuned on 1600+ NLP tasks with written instructions|
 
 ### Sentence Transformers
 * [SGPT - GPT Sentence Embeddings](https://chanys.github.io/sgpt/)
