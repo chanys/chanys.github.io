@@ -69,7 +69,8 @@ The following is an organization of my blog posts:
 |[T0](https://chanys.github.io/t0/)|11B|Oct-2021|Hugging Face and others|Multitask fine-tuning on T5 improves zero-shot performance on unseen tasks. Performs better than GPT-3 (175B)|
 
 ### Sentence Transformers
-TBD
+* [SGPT - GPT Sentence Embeddings](https://chanys.github.io/sgpt/)
+* [Sentence Embeddings Using Siamese Networks and all-mpnet-base-v2](https://chanys.github.io/sbert/)
 
 ### Large Scale Evaluation of Language Models
 * [SuperGLUE](https://chanys.github.io/superglue/): (May-2019) A Stickier Benchmark for General-Purpose Language Understanding Systems
@@ -87,6 +88,7 @@ TBD
 * [Self-Consistency](https://chanys.github.io/self-consistency/) as in inference strategy
 * [Big Bird Transformer for Longer Sequences](https://chanys.github.io/big-bird/)
 * [REALM - Augment Language Models with a Knowledge Retriever](https://chanys.github.io/realm/)
+* [Permutation Language Modeling](https://chanys.github.io/plm/)
 
 ### Search
 * [Efficient KNN search using product quantization](https://chanys.github.io/knn/)
