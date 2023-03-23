@@ -3,6 +3,8 @@ layout: post
 title: Optimizers
 ---
 
+An optimizer helps to update network parameters as training iterations proceed. Here we describe Gradient Descent (SGD), SGD with momentum, RMSProp, and Adam. 
+
 ### Gradient Descent
 We compute the gradient of the cost function $J(\theta)$ w.r.t. the parameters $\theta$ for the entire training set:
 $\theta_{j} \leftarrow \theta_{j} - \alpha \frac{\partial}{\partial \theta_{j}} J(\theta)$
