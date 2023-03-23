@@ -19,13 +19,14 @@ $$L = - \sum_{1 \le k \le K} y_{k} \text{ log}(\hat{y}_{k})$$
 
 ## Contrastive Learning
 
-The aim of contrastive learning is to learn effective representation by pulling semantically close neighbors together and pushing apart non-neighbors. Assume we are given a set of sematically related (positive) example pairs $D = \{(x_i, {x^+}_{i})\}$, for $1 \le i \le N$. 
+The aim of contrastive learning is to learn effective representation by pulling semantically close neighbors together and pushing apart non-neighbors. Assume we are given a set of sematically related (positive) example pairs $D = \{(x_i, x_{i'})\}$, for $1 \le i \le N$. 
 
-$h_i$
-${h^+}_{i}$
-$x_i$
-${x^+}_{i}$
-
-Let $h_i$ and ${h^+}_{i}$ denote the representations of $x_i$ and ${x^+}_{i}$. 
+Let $h_i$ and $h_{i'}$ denote the representations of $x_i$ and $x_{i'}$. 
 Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
 
+
+
+* $\tau$ is a temperature hyperparameter
+* $\text{sim}(h_i, h_j)$ is the cosine similarity $\frac{{h_{i}}^{T}h_j}{||h_i|| \cdot ||h_j||}$
+
+$$\text{loss}_i = -\text{log}\frac{e^{\text{sim}(h_i, h_{i'})/\tau}}{\sum_{1 \le j \le B} e^{\text{sim}(h_i, h_{j'})/\tau}}$$
