@@ -24,9 +24,9 @@ The aim of contrastive learning is to learn effective representation by pulling 
 Let $h_i$ and $h_{i'}$ denote the representations of $x_i$ and $x_{i'}$. 
 Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
 
-
+$$\text{loss}_i = -\text{log}\frac{e^{\text{sim}(h_i, h_{i'})/\tau}}{\sum_{1 \le j \le B} e^{\text{sim}(h_i, h_{j'})/\tau}}$$
 
 * $\tau$ is a temperature hyperparameter
-* $\text{sim}(h_i, h_j)$ is the cosine similarity $\frac{{h_{i}}^{T}h_j}{||h_i|| \cdot ||h_j||}$
+* $\text{sim}(h_i, h_j)$ is the cosine similarity$
 
-$$\text{loss}_i = -\text{log}\frac{e^{\text{sim}(h_i, h_{i'})/\tau}}{\sum_{1 \le j \le B} e^{\text{sim}(h_i, h_{j'})/\tau}}$$
+
