@@ -24,6 +24,9 @@ The following is an organization of my blog posts:
 * [Entropy and Cross-Entropy](https://chanys.github.io/entropy/)
 * [Perplexity](https://chanys.github.io/perplexity/) is commonly used as an intrinsic evaluation of a language model
 * [Likelihood based Generative Models](https://chanys.github.io/likelihood/)
+* [Loss Functions](https://chanys.github.io/loss-functions/)
+* [Activation Functions](https://chanys.github.io/activation-functions/)
+* [Optimizers](https://chanys.github.io/optimizers/)
 
 ### Dialog Models
 
