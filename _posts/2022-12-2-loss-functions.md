@@ -21,7 +21,7 @@ $$L = - \sum_{1 \le k \le K} y_{k} \text{ log}(\hat{y}_{k})$$
 
 The aim of contrastive learning is to learn effective representation by pulling semantically close neighbors together and pushing apart non-neighbors. Assume we are given a set of sematically related (positive) example pairs $D = \{(x_i, {x^+}_{i})\}$, for $1 \le i \le N$. 
 
-Let $\mathbf{h}_i$ and $\mathbf{h^+}_{i}$ denote the representations of $x_i$ and ${x^+}_{i}$. Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
+Let $\mathbf{h}_i$ and ${\mathbf{h}^+}_{i}$ denote the representations of $x_i$ and ${x^+}_{i}$. Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
 
 $$\text{loss}_i = -\text{log}\frac{e^{\text{sim}(\mathbf{h}_i, \mathbf{h^+}_{i})/\tau}}{\sum_{1 \le j \le B} e^{\text{sim}(\mathbf{h}_i, \mathbf{h^+}_{j})/\tau}}$$
 
