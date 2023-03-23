@@ -3,6 +3,7 @@ layout: post
 title: Activation Functions
 ---
 
+Activation functions define the output of a node given its input. We describe here the Sigmoid, Tanh, ReLU, Leaky ReLU, ELU, and GELU.
 
 ### Sigmoid (Logistic)
 
