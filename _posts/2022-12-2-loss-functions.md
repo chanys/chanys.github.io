@@ -16,7 +16,9 @@ When there are multiple classes $k \in K$, let $\hat{y}_{k}$ be the predicted (s
 $$L = - \sum_{1 \le k \le K} y_{k} \text{ log}(\hat{y}_{k})$$
 
 ## Contrastive Learning
-The aim of contrastive learning is to learn effective representation by pulling semantically close neighbors together and pushing apart non-neighbors. Assume we are given a set of sematically related (positive) example pairs $D = \{(x_i, x_i^{+})\}_{i=1}^{N}$. Let $\mathbf{h}_i$ and $\mathbf{h}_{i}^{+}$ denote the representations of $x_i$ and $x_{i}^{+}$. Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
+$x^{+}_{i}$
+$x_{i}^{+}$
+The aim of contrastive learning is to learn effective representation by pulling semantically close neighbors together and pushing apart non-neighbors. Assume we are given a set of sematically related (positive) example pairs $D = \{(x_i, x^{+}_{i})\}_{i=1}^{N}$. Let $\mathbf{h}_i$ and $\mathbf{h}_{i}^{+}$ denote the representations of $x_i$ and $x_{i}^{+}$. Using in-batch negatives (batch size $B$) with a cross-entropy objective: 
 $$\text{loss}_i = -\text{log}\frac{e^{\text{sim}(\mathbf{h}_i, \mathbf{h}_{i}^{+})/\tau}}{\sum_{j=1}^{B} e^{\text{sim}(\mathbf{h}_i, \mathbf{h}_{j}^{+})/\tau}}$$
 * $\tau$ is a temperature hyperparameter
 * $\text{sim}(\mathbf{h}_i, \mathbf{h}_j)$ is the cosine similarity $\frac{\mathbf{h}_{i}^{T}\mathbf{h}_j}{||\mathbf{h}_i|| \cdot ||\mathbf{h}_j||}$
