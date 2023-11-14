@@ -70,20 +70,14 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum_
 	* Computing this projection transformation for any vector $[x, y]$ is computationally equivalent to taking the dot-product: $[u_x, u_y] \begin{bmatrix} x\\y \end{bmatrix} = u_x \cdot x + u_u \cdot y$
 	* This is why taking the dot-product with the unit vector, can be interpreted as projecting a vector onto the span of the unit vector and noting the length.
 
+<p align="center">
+  <img alt="Light" src="![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)" width="45%">
+</p>
 
-![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)
 
 
-<div style="display: flex; justify-content: center; height: 25vh;">
-    <div style="padding: 10px;">
-        <img src="![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)" alt="Figure 1" style="max-width: auto; max-height: 200px; display: block; margin: 0 auto;">
-        <p></p>
-    </div>
-	<div style="padding: 10px;">
-        <img src="![linear_algebra2](https://github.com/chanys/chanys.github.io/assets/15001463/d5a9b863-d023-4758-93ff-687c4b5c760e)" alt="Figure 2" style="max-width: auto; max-height: 200px; display: block; margin: 0 auto;">
-        <p></p>
-    </div>
-</div>
 
 * Summary: we had a linear transformation from 2-D space to the 1-D number line. Because this (projection) transformation is linear, it is described by some 1x2 matrix $[u_x, u_y]$. And matrix-vector product is numerically the same as dot-product: $[u_x, u_y] \begin{bmatrix} x\\y \end{bmatrix} = u_x \cdot x + u_y \cdot y$
 
