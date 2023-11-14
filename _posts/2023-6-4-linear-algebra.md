@@ -126,7 +126,8 @@ $$
 
 * To understand what the transformation described by a matrix does, you can read off the columns of the matrix as the landing spots for the basis vectors. But, to understand what the transformation actually does (while being less dependent on the particular coordinate system), is to find the eigenvectors and eigenvalues. 
 
-* To find the eigenvectors and eigenvalues, you consider the equation $A \vec{v} = \lambda \vec{v}$. It's like saying: For some special vectors $\vec{v}$, when I apply the transformation described by matrix $A$, it's as if I just stretched or squished them by a factor of $\lambda$. 
+* To find the eigenvectors and eigenvalues, you consider the equation $A \vec{v} = \lambda \vec{v}$. It's like saying: For some special vectors $\vec{v}$, when I apply the transformation described by matrix $A$, it's as if I just stretched or squished them by a factor of $\lambda$.
+ 
 $$
 \begin{aligned}
 	A \vec{v} &= \lambda \vec{v}\\
@@ -173,11 +174,16 @@ Given a $n \times m$ matrix $\mathbf{X}$, consisting of vectors $x_1, x_2, \ldot
    * $V V^{T} = V^{T} V = I$
    * The first column of $V^{T}$ will tell me the mixture that I can take on all the columns of $\mathbf{U}$, to add them up to equal $x_1$. So you can think of each column of $V^{T}$ as "mixtures" of the various $\vec{u}$ (scaled by $\sigma$) to make up each column vector $\vec{x}$
 * $\mathbf{X} = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \sigma_{1} u_1 v_1^{T} + \sigma_{2} u_2 v_1^{T} + \ldots \sigma_{m} u_m v_m^{T}$. To see this:
+
 $$
  \begin{bmatrix}a_1 & b_1\\c_1 & d_1 \end{bmatrix} \times \begin{bmatrix} a_2 & b_2\\c_2 & d_2 \end{bmatrix} = \begin{bmatrix} a_1 a_2 + b_1 c_2 & a_1 b_2 + b_1 d_2\\c_1 a_2 + d_1 c_2 & c_1 b_2 + d_1 d_2 \end{bmatrix}
+$$
 
+$$
 \text{Let } u_1=\begin{bmatrix} a_1\\c_1 \end{bmatrix}, v_1^{T} = \begin{bmatrix} a_2 & b_2 \end{bmatrix}\text{. Then } u_1 v_1^{T} = \begin{bmatrix} a_1 a_2 & a_1 b_2\\c_1 a_2 & c_1 b_2 \end{bmatrix}
+$$
 
+$$
 \text{Let } u_2=\begin{bmatrix} b_1\\d_1 \end{bmatrix}, v_2^{T} = \begin{bmatrix} c_2 & d_2 \end{bmatrix}\text{. Then } u_2 v_2^{T} = \begin{bmatrix} b_1 c_2 & b_1 d_2\\d_1 c_2 & d_1 d_2 \end{bmatrix}
 $$
    * **Note that the matrix $u_1 v_1^{T}$ is rank 1, because it has only 1 linearly independent column, and 1 linearly independent row.**
