@@ -188,6 +188,7 @@ $$
 $$
 \text{Let } u_2=\begin{bmatrix} b_1\\d_1 \end{bmatrix}, v_2^{T} = \begin{bmatrix} c_2 & d_2 \end{bmatrix}\text{. Then } u_2 v_2^{T} = \begin{bmatrix} b_1 c_2 & b_1 d_2\\d_1 c_2 & d_1 d_2 \end{bmatrix}
 $$
+
    * **Note that the matrix $u_1 v_1^{T}$ is rank 1, because it has only 1 linearly independent column, and 1 linearly independent row.**
    * The sum: $\sigma_{1} u_1 v_1^{T} + \sigma_{2} u_2 v_1^{T} + \ldots \sigma_{m} u_m v_m^{T}$ increasingly improve the approximation of $\mathbf{X}$
 
