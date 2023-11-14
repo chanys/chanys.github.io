@@ -1,4 +1,7 @@
-# Linear Algebra
+---
+layout: post
+title: Linear Algebra
+---
 
 ## Basic Concepts
 * **Span**: The span of a set of vectors is the set of all possible linear combinations that can be formed by those vectors. E.g. the span of two vectors $\vec{v}$ and $\vec{w}$, is the set of all their linear combinations: $a \vec{v} + b \vec{w}$, where $a$ and $b$ are real number scalars.
@@ -153,8 +156,7 @@ Given 2 variables, "Gene 1" and "Gene 2" and variables samples (green dots) inst
 		* For PC2, gene-2 is 4 times as important as gene-1
 * NOTE: **Eigenvalues (average of the sum-of-square disances to the origin) are measures of variation**
 
-![_config.yml]({{ site.baseurl }}/images/linear_algebra3.png)
-![_config.yml]({{ site.baseurl }}/images/linear_algebra4.png)
+![_config.yml]({{ site.baseurl }}/images/linear_algebra3.png)  ![_config.yml]({{ site.baseurl }}/images/linear_algebra4.png)
 
 ## SVD
 Given a $n \times m$ matrix $\mathbf{X}$, consisting of vectors $x_1, x_2, \ldots, x_m$, where each column $\vec{x} \in \mathbb{R}^{n}$ represent a data sample. SVD decomposes into:
