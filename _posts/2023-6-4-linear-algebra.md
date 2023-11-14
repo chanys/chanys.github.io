@@ -21,18 +21,17 @@ title: Linear Algebra
 Assume that you have a 2 dimensional coordinate system with $\hat{i}$ and $\hat{j}$ defined as basis vectors. After you apply some linear transformation to the coordinate system, $\hat{i}$ lands at coordinates $[\hat{i}_1, \hat{i}_2]$, and $\hat{j}$ lands at coordinates $[\hat{j}_1, \hat{j}_2]$.
 * In a linear transformation, grid lines remain parallel and evenly spaced, and the origin remains fixed.
 * Then given any general untransformed vector $[x, y]$, its coordinates after the same linear transform will be:
-
 $$
 x\begin{bmatrix}\hat{i}_1\\ \hat{i}_2 \end{bmatrix} + y\begin{bmatrix}\hat{j}_1\\ \hat{j}_2 \end{bmatrix}
 $$
 
-* It is common to capture linear transformations in the form of a matrix: $\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\\hat{i}_2 & \hat{j}_2 \end{bmatrix}$
+* It is common to capture linear transformations in the form of a matrix: $\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\ \hat{i}_2 & \hat{j}_2 \end{bmatrix}$
 
 
 * Hence, the following matrix multiplication is just a way to compute what the transformation does to the vector $[x, y]$. I.e. **matrix multiplication is a way to apply the transformation to a vector, leading to its transformed coordinates.**
-```math
+$$
 \begin{bmatrix}\hat{i}_1 & \hat{j}_1\\\hat{i}_2 & \hat{j}_2 \end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} = x\begin{bmatrix}\hat{i}_1\\ \hat{i}_2 \end{bmatrix} + y\begin{bmatrix}\hat{j}_1\\ \hat{j}_2 \end{bmatrix}
-```
+$$
 
 * A related note: matrix multiplcation are just applying transformations one after another. E.g. the associative rule of matrices: $(AB)C == A(BC)$, since the both transformations are applied in order of: $C$, then $B$, then $A$.
 
@@ -44,27 +43,25 @@ The factor by which the linear transformation changes any area, e.g.:
 
 ### Zero determinant
 Checking whether the determinant of a given matrix is 0, will indicate whether the transformation associated with that matrix compresses everything into a **smaller dimension**, e.g. the following transforms everything onto a line (thus area of any region becomes 0). NOTE: the columns of the matrix must be linearly dependent.
-```math
+$$
 \text{det}\left(\begin{bmatrix} 4 & 2\\2 & 1 \end{bmatrix}\right) = 0
-```
+$$
 
 ### Negative determinant
 Orientation space has been inverted. E.g. before transformation, let's say going in a clockwise direction, you first encounter $\hat{j}$ then $\hat{i}$. But after transformation, you encounter $\hat{i}$ then $\hat{j}$
 
 ### Linear system of equations
 E.g. Given ($2x + 2y = -4$), ($1x + 3y = -1$), we can represent as:
-```math
+$$
 \begin{bmatrix} 2 & 2\\1 & 3 \end{bmatrix} \begin{bmatrix} x\\y \end{bmatrix} = \begin{bmatrix} -4\\-1 \end{bmatrix}
-```
+$$
 
 * Solving for $A \vec{x} = \vec{v}$ means we are looking for a vector $\vec{x}$, which after applying the transformation $A$, lands on $\vec{v}$
 
 ### Inverse of a matrix
 To solve a linear system of equations, we find the inverse of a matrix. $A^{-1}$ is the unique transformation, that if you first apply $A$, then follow it with the transformation $A^{-1}$, i.e. doing $A^{-1} A$ (we do transformation from right to left), you end up back where you started.
-* I.e. this results in the transformation that does nothing:
-```math
-\begin{bmatrix} 1&0 \\0 & 1 \end{bmatrix}
-```
+* I.e. this results in the transformation that does nothing: $\begin{bmatrix} 1&0 \\0 & 1 \end{bmatrix}$
+
    * This is called the identity matrix, where it leaves $\vec{i}$ and $\vec{j}$ where they are, unmoved.
 * Hence, to solve for $\vec{x}$, first find $A^{-1}$. Then do: $A^{-1} A \vec{x} = A^{-1} \vec{v}$.
 * Note that $A^{-1} \vec{v}$ means you are playing the transformation $A$ in reverse, and following $\vec{v}$, thus getting $\vec{x}$
@@ -74,10 +71,7 @@ To solve a linear system of equations, we find the inverse of a matrix. $A^{-1}$
 ### Column space of a matrix
 The span of the columns of the matrix
 * The columns of the matrix says where the basis vectors land, after the transformation via the matrix. The **span** of those transformed basis vectors gives you all possible points you can reach in the output space. You also call this the "**column space**" of the matrix.
-* What about rectangular matrix like the following?
-```math
-\begin{bmatrix} 2 & 0 \\ -1 & 1 \\ -2 & 1 \end{bmatrix}
-```
+* What about rectangular matrix like: $\begin{bmatrix} 2 & 0 \\ -1 & 1 \\ -2 & 1 \end{bmatrix}$
    * The "column space" of this matrix (the space where all the vectors land), is a 2-D plane slicing through the origin of 3-D space.
    * A 3x2 matrix maps 2-D to 3-D. The 2 columns indicate that the input space has 2 basis vectors. The 3 rows indicate that the landing spot of those basis vectors, is described with 3 separate coordinates.
 
@@ -170,17 +164,17 @@ Given a $n \times m$ matrix $\mathbf{X}$, consisting of vectors $x_1, x_2, \ldot
    * $V V^{T} = V^{T} V = I$
    * The first column of $V^{T}$ will tell me the mixture that I can take on all the columns of $\mathbf{U}$, to add them up to equal $x_1$. So you can think of each column of $V^{T}$ as "mixtures" of the various $\vec{u}$ (scaled by $\sigma$) to make up each column vector $\vec{x}$
 * $\mathbf{X} = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \sigma_{1} u_1 v_1^{T} + \sigma_{2} u_2 v_1^{T} + \ldots \sigma_{m} u_m v_m^{T}$. To see this:
-```math
+$$
  \begin{bmatrix}a_1 & b_1\\c_1 & d_1 \end{bmatrix} \times \begin{bmatrix} a_2 & b_2\\c_2 & d_2 \end{bmatrix} = \begin{bmatrix} a_1 a_2 + b_1 c_2 & a_1 b_2 + b_1 d_2\\c_1 a_2 + d_1 c_2 & c_1 b_2 + d_1 d_2 \end{bmatrix}
-```
+$$
       
-```math
+$$
 \text{Let } u_1=\begin{bmatrix} a_1\\c_1 \end{bmatrix}, v_1^{T} = \begin{bmatrix} a_2 & b_2 \end{bmatrix}\text{. Then } u_1 v_1^{T} = \begin{bmatrix} a_1 a_2 & a_1 b_2\\c_1 a_2 & c_1 b_2 \end{bmatrix}
-```
+$$
 
-```math 
+$$
 \text{Let } u_2=\begin{bmatrix} b_1\\d_1 \end{bmatrix}, v_2^{T} = \begin{bmatrix} c_2 & d_2 \end{bmatrix}\text{. Then } u_2 v_2^{T} = \begin{bmatrix} b_1 c_2 & b_1 d_2\\d_1 c_2 & d_1 d_2 \end{bmatrix}
-```
+$$
    * **Note that the matrix $u_1 v_1^{T}$ is rank 1, because it has only 1 linearly independent column, and 1 linearly independent row.**
    * The sum: $\sigma_{1} u_1 v_1^{T} + \sigma_{2} u_2 v_1^{T} + \ldots \sigma_{m} u_m v_m^{T}$ increasingly improve the approximation of $\mathbf{X}$
 
@@ -189,9 +183,9 @@ We can think of the $\mathbf{U}$ and $\mathbf{V}$ matrices as eigenvectors of a 
 * Let $\mathbf{X}^{T}$ have rows $x_1^{T}, x_2^{T}, \ldots x_{m}^{T}$
 * Let $\mathbf{X}$ have columns $x_1, x_2, \ldots x_{m}$
 * Then $\mathbf{X}^{T} \mathbf{X}$ =
-```math
+$$
 \begin{bmatrix} x_1^{T}x_1 & x_1^{T}x_2 & \ldots & x_1^{T}x_m \\ x_2^{T}x_1 & x_2^{T}x_2 & \ldots & x_2^{T}x_m \\ \vdots & \vdots & \cdots & \vdots \\ x_m^{T}x_1 & x_m^{T}x_2 & \ldots & x_m^{T} x_m\end{bmatrix}
-```
+$$
 
 * So this is a $m \times x$ matrix where each value is the $x_i \cdot x_j$ giving the similarity between $x_i$ and $x_j$.
 * Notice that $\mathbf{X}^{T} \mathbf{X} = (\mathbf{U} \mathbf{\Sigma} \mathbf{V}^{T})^{T} \mathbf{U} \mathbf{\Sigma} \mathbf{V}^{T} = \mathbf{V} \mathbf{\Sigma} \mathbf{U}^{T} \mathbf{U} \mathbf{\Sigma} \mathbf{V}^{T} = \mathbf{V} \mathbf{\Sigma}^{2} \mathbf{V}^{T}$
