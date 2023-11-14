@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # Linear Algebra
 
 ## Basic Concepts
@@ -110,9 +106,7 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum\
 ```
    * This is why taking the dot-product with the unit vector, can be interpreted as projecting a vector onto the span of the unit vector and noting the length.
 
-Project onto x | Project onto y
---- | ---
-![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png) | ![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)
+![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png) ![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)
 
 * Summary: we had a linear transformation from 2-D space to the 1-D number line. Because this (projection) transformation is linear, it is described by some 1x2 matrix $[u_x, u_y]$. And matrix-vector product is numerically the same as dot-product:
 ```math
@@ -159,17 +153,8 @@ Given 2 variables, "Gene 1" and "Gene 2" and variables samples (green dots) inst
 		* For PC2, gene-2 is 4 times as important as gene-1
 * NOTE: **Eigenvalues (average of the sum-of-square disances to the origin) are measures of variation**
 
-
-<div style="display: flex; justify-content: center; height: 25vh;">
-    <div style="padding: 10px;">
-        <img src=":/7f4441e94d4a48aba1e7bb16204daab7" alt="Figure 1" style="max-width: auto; max-height: auto; display: block; margin: 0 auto;">
-        <p></p>
-    </div>
-	<div style="padding: 10px;">
-        <img src=":/b360044edcee4802addfd3e6d2d59d53" alt="Figure 2" style="max-width: auto; max-height: auto; display: block; margin: 0 auto;">
-        <p></p>
-    </div>
-</div>
+![_config.yml]({{ site.baseurl }}/images/linear_algebra3.png)
+![_config.yml]({{ site.baseurl }}/images/linear_algebra4.png)
 
 ## SVD
 Given a $n \times m$ matrix $\mathbf{X}$, consisting of vectors $x_1, x_2, \ldots, x_m$, where each column $\vec{x} \in \mathbb{R}^{n}$ represent a data sample. SVD decomposes into:
