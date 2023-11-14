@@ -106,14 +106,7 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum\
 ```
    * This is why taking the dot-product with the unit vector, can be interpreted as projecting a vector onto the span of the unit vector and noting the length.
 
-<p float="left">
-  <img src="![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)" width="100" />
-  <img src="![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)" width="100" /> 
-</p>
 
-
-![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)
-![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)
 
 <p align="center">
   <img alt="Light" src="![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)" width="45%">
