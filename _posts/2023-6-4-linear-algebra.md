@@ -3,6 +3,8 @@ layout: post
 title: Linear Algebra
 ---
 
+Here we will review the basis of linear algebra, which should help towards understand techniques such as Low Rank Adaptation (LoRA).
+
 ## Basic Concepts
 * **Span**: The span of a set of vectors is the set of all possible linear combinations that can be formed by those vectors. E.g. the span of two vectors $\vec{v}$ and $\vec{w}$, is the set of all their linear combinations: $a \vec{v} + b \vec{w}$, where $a$ and $b$ are real number scalars.
 
