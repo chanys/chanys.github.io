@@ -16,6 +16,10 @@ layout: default
   {% include disqus.html %}
 </article>
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 <script type="text/javascript">
     MathJax.Hub.Config({
@@ -24,6 +28,7 @@ layout: default
         tex2jax: {
         	inlineMath: [ ['$','$'], ["\\(", "\\)"] ],
         	displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          displayMath: [ ['```math','```'], ["\\[","\\]"] ],
         	processEscapes: true
         },
     "HTML-CSS": { availableFonts: ["LaTeX"] }
