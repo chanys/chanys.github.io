@@ -21,14 +21,13 @@ title: Linear Algebra
 Assume that you have a 2 dimensional coordinate system with $\hat{i}$ and $\hat{j}$ defined as basis vectors. After you apply some linear transformation to the coordinate system, $\hat{i}$ lands at coordinates $[\hat{i}_1, \hat{i}_2]$, and $\hat{j}$ lands at coordinates $[\hat{j}_1, \hat{j}_2]$.
 * In a linear transformation, grid lines remain parallel and evenly spaced, and the origin remains fixed.
 * Then given any general untransformed vector $[x, y]$, its coordinates after the same linear transform will be:
-```math
-x\begin{bmatrix}\hat{i}_1\\ \hat{i}_2 \end{bmatrix} + y\begin{bmatrix}\hat{j}_1\\ \hat{j}_2 \end{bmatrix}
-```
 
-* It is common to capture linear transformations in the form of a matrix:
-```math
-\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\\hat{i}_2 & \hat{j}_2 \end{bmatrix}
-```
+$$
+x\begin{bmatrix}\hat{i}_1\\ \hat{i}_2 \end{bmatrix} + y\begin{bmatrix}\hat{j}_1\\ \hat{j}_2 \end{bmatrix}
+$$
+
+* It is common to capture linear transformations in the form of a matrix: $\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\\hat{i}_2 & \hat{j}_2 \end{bmatrix}$
+
 
 * Hence, the following matrix multiplication is just a way to compute what the transformation does to the vector $[x, y]$. I.e. **matrix multiplication is a way to apply the transformation to a vector, leading to its transformed coordinates.**
 ```math
