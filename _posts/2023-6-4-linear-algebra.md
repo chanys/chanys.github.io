@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Linear Algebra
 
 ## Basic Concepts
@@ -106,13 +110,9 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum\
 ```
    * This is why taking the dot-product with the unit vector, can be interpreted as projecting a vector onto the span of the unit vector and noting the length.
 
-
-
-<p align="center">
-  <img alt="Light" src="![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png)" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)" width="45%">
-</p>
+Project onto x | Project onto y
+--- | ---
+![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png) | ![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)
 
 * Summary: we had a linear transformation from 2-D space to the 1-D number line. Because this (projection) transformation is linear, it is described by some 1x2 matrix $[u_x, u_y]$. And matrix-vector product is numerically the same as dot-product:
 ```math
