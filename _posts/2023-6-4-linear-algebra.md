@@ -25,7 +25,10 @@ $$
 x\begin{bmatrix}\hat{i}_1\\ \hat{i}_2 \end{bmatrix} + y\begin{bmatrix}\hat{j}_1\\ \hat{j}_2 \end{bmatrix}
 $$
 
-* It is common to capture linear transformations in the form of a matrix: $\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\ \hat{i}_2 & \hat{j}_2 \end{bmatrix}$
+* It is common to capture linear transformations in the form of a matrix:
+$$
+\begin{bmatrix}\hat{i}_1 & \hat{j}_1\\ \hat{i}_2 & \hat{j}_2 \end{bmatrix}
+$$
 
 
 * Hence, the following matrix multiplication is just a way to compute what the transformation does to the vector $[x, y]$. I.e. **matrix multiplication is a way to apply the transformation to a vector, leading to its transformed coordinates.**
@@ -37,12 +40,13 @@ $$
 
 ### Determinant of a transformation
 The factor by which the linear transformation changes any area, e.g.:
-```math
+$$
 \text{det}\left(\begin{bmatrix} 3 & 2\\0 & 2 \end{bmatrix}\right) = 6
-```
+$$
 
 ### Zero determinant
 Checking whether the determinant of a given matrix is 0, will indicate whether the transformation associated with that matrix compresses everything into a **smaller dimension**, e.g. the following transforms everything onto a line (thus area of any region becomes 0). NOTE: the columns of the matrix must be linearly dependent.
+
 $$
 \text{det}\left(\begin{bmatrix} 4 & 2\\2 & 1 \end{bmatrix}\right) = 0
 $$
@@ -60,8 +64,10 @@ $$
 
 ### Inverse of a matrix
 To solve a linear system of equations, we find the inverse of a matrix. $A^{-1}$ is the unique transformation, that if you first apply $A$, then follow it with the transformation $A^{-1}$, i.e. doing $A^{-1} A$ (we do transformation from right to left), you end up back where you started.
-* I.e. this results in the transformation that does nothing: $\begin{bmatrix} 1&0 \\0 & 1 \end{bmatrix}$
-
+* I.e. this results in the transformation that does nothing:
+$$
+\begin{bmatrix} 1&0 \\0 & 1 \end{bmatrix}
+$$
    * This is called the identity matrix, where it leaves $\vec{i}$ and $\vec{j}$ where they are, unmoved.
 * Hence, to solve for $\vec{x}$, first find $A^{-1}$. Then do: $A^{-1} A \vec{x} = A^{-1} \vec{v}$.
 * Note that $A^{-1} \vec{v}$ means you are playing the transformation $A$ in reverse, and following $\vec{v}$, thus getting $\vec{x}$
@@ -71,7 +77,10 @@ To solve a linear system of equations, we find the inverse of a matrix. $A^{-1}$
 ### Column space of a matrix
 The span of the columns of the matrix
 * The columns of the matrix says where the basis vectors land, after the transformation via the matrix. The **span** of those transformed basis vectors gives you all possible points you can reach in the output space. You also call this the "**column space**" of the matrix.
-* What about rectangular matrix like: $\begin{bmatrix} 2 & 0 \\ -1 & 1 \\ -2 & 1 \end{bmatrix}$
+* What about rectangular matrix like:
+$$
+\begin{bmatrix} 2 & 0 \\ -1 & 1 \\ -2 & 1 \end{bmatrix}
+$$
    * The "column space" of this matrix (the space where all the vectors land), is a 2-D plane slicing through the origin of 3-D space.
    * A 3x2 matrix maps 2-D to 3-D. The 2 columns indicate that the input space has 2 basis vectors. The 3 rows indicate that the landing spot of those basis vectors, is described with 3 separate coordinates.
 
@@ -97,17 +106,17 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum\
    * Assume we have a function that **projects** any 2-D vector onto this number line (this function goes from 2-D to a single real number). **Think of this projection as a linear transformation.** We aim to find the projection matrix that describes this projection function. Recall then that we need to find where the basis vectors $\hat{i}$ and $\hat{j}$ land on the number line after this **projection/transformation**.
    * From the following figure, you can see that the coordinate where $\hat{i}$ land on the number line, is simply $u_x$. Similarly, the coordinate where $\hat{j}$ land on the number line is simply $u_y$. **Thus, we have the linear transformation matrix $[u_x, u_y]$, which transforms any vector in the original 2-D space onto the number line.** Recall that the transformation we are talking about, is projecting any general vector onto the number line.
    * Computing this projection transformation for any vector $[x, y]$ is computationally equivalent to taking the dot-product:
-```math
+$$
 [u_x, u_y] \begin{bmatrix} x\\y \end{bmatrix} = u_x \cdot x + u_u \cdot y
-```
+$$
    * This is why taking the dot-product with the unit vector, can be interpreted as projecting a vector onto the span of the unit vector and noting the length.
 
 ![_config.yml]({{ site.baseurl }}/images/linear_algebra1.png) ![_config.yml]({{ site.baseurl }}/images/linear_algebra2.png)
 
 * Summary: we had a linear transformation from 2-D space to the 1-D number line. Because this (projection) transformation is linear, it is described by some 1x2 matrix $[u_x, u_y]$. And matrix-vector product is numerically the same as dot-product:
-```math
+$$
 [u_x, u_y] \begin{bmatrix} x\\y \end{bmatrix} = u_x \cdot x + u_y \cdot y
-```
+$$
 
 ## Eigenvector
 
@@ -117,8 +126,7 @@ Why does the numerical computation of dot-product $\vec{v} \cdot \vec{w} = \sum\
 
 * To understand what the transformation described by a matrix does, you can read off the columns of the matrix as the landing spots for the basis vectors. But, to understand what the transformation actually does (while being less dependent on the particular coordinate system), is to find the eigenvectors and eigenvalues. 
 
-* To find the eigenvectors and eigenvalues, you consider the equation $A \vec{v} = \lambda \vec{v}$. It's like saying: For some special vectors $\vec{v}$, when I apply the transformation described by matrix $A$, it's as if I just stretched or squished them by a factor of $\lambda$.
- 
+* To find the eigenvectors and eigenvalues, you consider the equation $A \vec{v} = \lambda \vec{v}$. It's like saying: For some special vectors $\vec{v}$, when I apply the transformation described by matrix $A$, it's as if I just stretched or squished them by a factor of $\lambda$. 
 $$
 \begin{aligned}
 	A \vec{v} &= \lambda \vec{v}\\
@@ -126,10 +134,11 @@ $$
 	(A - \lambda I) \vec{v} & = \vec{0}
 \end{aligned}
 $$
+
 * For instance, $(A - \lambda I)$ could be something like:
-```math
+$$
 \begin{bmatrix} 3-\lambda & 1 & 4\\ 1 & 5-\lambda & 9\\ 2 & 6 & 5-\lambda \end{bmatrix}
-```
+$$
 
 * The only way for the product of a matrix $(A - \lambda I)$ with a non-zero vector $\vec{v}$ to become zero $(\vec{0})$, i.e. **for the transformed vector to be the zero vector (transformation squashes or collapses the original vector $\vec{v}$ down to the origin)**, is if the transformation associated with the matrix squishes space into a lower dimension, i.e. $\text{det}(A - \lambda I)$ must be equal to 0. When you transform everything onto a line, the area of any region becomes 0. 
 
@@ -166,13 +175,9 @@ Given a $n \times m$ matrix $\mathbf{X}$, consisting of vectors $x_1, x_2, \ldot
 * $\mathbf{X} = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \sigma_{1} u_1 v_1^{T} + \sigma_{2} u_2 v_1^{T} + \ldots \sigma_{m} u_m v_m^{T}$. To see this:
 $$
  \begin{bmatrix}a_1 & b_1\\c_1 & d_1 \end{bmatrix} \times \begin{bmatrix} a_2 & b_2\\c_2 & d_2 \end{bmatrix} = \begin{bmatrix} a_1 a_2 + b_1 c_2 & a_1 b_2 + b_1 d_2\\c_1 a_2 + d_1 c_2 & c_1 b_2 + d_1 d_2 \end{bmatrix}
-$$
-      
-$$
-\text{Let } u_1=\begin{bmatrix} a_1\\c_1 \end{bmatrix}, v_1^{T} = \begin{bmatrix} a_2 & b_2 \end{bmatrix}\text{. Then } u_1 v_1^{T} = \begin{bmatrix} a_1 a_2 & a_1 b_2\\c_1 a_2 & c_1 b_2 \end{bmatrix}
-$$
 
-$$
+\text{Let } u_1=\begin{bmatrix} a_1\\c_1 \end{bmatrix}, v_1^{T} = \begin{bmatrix} a_2 & b_2 \end{bmatrix}\text{. Then } u_1 v_1^{T} = \begin{bmatrix} a_1 a_2 & a_1 b_2\\c_1 a_2 & c_1 b_2 \end{bmatrix}
+
 \text{Let } u_2=\begin{bmatrix} b_1\\d_1 \end{bmatrix}, v_2^{T} = \begin{bmatrix} c_2 & d_2 \end{bmatrix}\text{. Then } u_2 v_2^{T} = \begin{bmatrix} b_1 c_2 & b_1 d_2\\d_1 c_2 & d_1 d_2 \end{bmatrix}
 $$
    * **Note that the matrix $u_1 v_1^{T}$ is rank 1, because it has only 1 linearly independent column, and 1 linearly independent row.**
