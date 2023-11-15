@@ -1,4 +1,7 @@
-# Multi-query and Grouped Multi-query Attention
+---
+layout: post
+title: Multi-query and Grouped Multi-query Attention
+---
 
 ## Multi-query Attention
 
