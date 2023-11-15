@@ -40,4 +40,4 @@ However, we only want this distribution at the onset of training, and wish to al
 move away from this initial distribution as training progresses. 
 So, layer normalization also makes use of learnable parameters $\gamma$ and $\beta$.
 
-The above normalizes each individual sample. There is another normalization called **batch normalization**, which normalizes each individual feature, i.e. calculate $\mu$ and $\sigma$ for each individual feature and then normalize.
+The above **normalizes each individual sample**. There is another normalization called **batch normalization**, which **normalizes each individual feature**, i.e. calculate $\mu$ and $\sigma$ for each individual feature and then normalize.
