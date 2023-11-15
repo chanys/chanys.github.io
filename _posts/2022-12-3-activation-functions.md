@@ -67,3 +67,19 @@ As $x$ becomes smaller, $P(X \le x)$ corresponding becomes smaller, thus leading
 * From the Figure, we see that $\text{GELU}(x)$ is 0 for small values of $x$. 
 * At around $x = -2$, $\text{GELU}(x)$ starts deviating from 0.
 * When $x$ is positive, $P(X \le x)$ moves closer and closer to 1, thus $x P(X \le x)$ starts approximating $x$, i.e. approaches just $\text{ReLU}(x)$.
+
+
+## Swish-Gated Linear Unit (SwiGLU/SiLU)
+
+When $\beta=1$, this is called the Sigmoid Linear Unit (SiLU) function:
+$\text{swish}(x) = x \text{ sigmoid } (\beta x) = \frac{x}{1 + e^{-\beta x}}$
+
+![_config.yml]({{ site.baseurl }}/images/activation_function_swiglu.png)
+
+The usual feed-forward layer in the transformer which uses ReLU is: $\text{max}(0, x W_1) W_2$.
+
+LLaMA uses the Swish: 
+$$\text{FFN}_{\text{SwiGLU}}(x, W, V, W_2) = (\text{Swish}_{\beta=1}(xW) \otimes xV) W_2$$
+* $\otimes$ denote element wise multiplication
+* dim($W$) = dim($V$) = dim $\times$ hidden_dim
+* dim($W_2$) = hidden_dim $\times$ dim
