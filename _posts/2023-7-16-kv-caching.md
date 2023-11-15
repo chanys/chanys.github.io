@@ -1,4 +1,8 @@
-# Key-Value Caching
+---
+layout: post
+title: Key-Value Caching
+---
+
 
 At each time-step of a generative model, we just want to calculate the attention scores for the new token. To avoid re-calculating attention scores associated with previous (already generated) tokens, we apply Key-Value (KV) caching. 
 
