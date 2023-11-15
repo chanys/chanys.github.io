@@ -35,7 +35,9 @@ We also define $\gamma$ and $\beta$ as network learnable parameters. We then cal
 * $\hat{x}^{bt} = \frac{x^{bt} - \mu^{bt}}{\sqrt{\sigma^{bt}} + \epsilon}$ : (standarize, and $\epsilon$ for numerical stability)
 * $y^{bt} = \gamma^{T} \hat{x}^{bt} + \beta$ (rescaling)
 
-Note that without the final rescaling, we will always be forcing the output $y^{bt}$ to have mean 0 and standard deviation 1. 
+Note that without the final rescaling, we will always be forcing the output $y^{bt}$ to have mean 0 and standard deviation 1 (standard Gaussian).
 However, we only want this distribution at the onset of training, and wish to allow the network the flexibility to 
 move away from this initial distribution as training progresses. 
 So, layer normalization also makes use of learnable parameters $\gamma$ and $\beta$.
+
+The above normalizes each individual sample. There is another normalization called **batch normalization**, which normalizes each individual feature, i.e. calculate $\mu$ and $\sigma$ for each individual feature and then normalize.
