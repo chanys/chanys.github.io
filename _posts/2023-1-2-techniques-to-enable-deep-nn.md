@@ -47,6 +47,8 @@ The above **normalizes each individual sample**. There is another normalization 
 The success of LayerNorm is attributed to its re-centering and re-scaling. The RMSNorm paper hypothesize that the re-scaling is the reason for success of LayerNorm, rather than re-centering.
 
 Hence, RMSNorm is proposed, which focuses only on re-scaling to normalize each individual sample $x$ with dimension $n$:
-$$\text{RMS}(\vec{x}) = \sqrt{\frac{1}{n} \sum\limits_{i=1}^{n} x_{i}^{2}}$$
+$$
+\text{RMS}(\vec{x}) = \sqrt{\frac{1}{n} \sum\limits_{i=1}^{n} x_{i}^{2}}
+$$
 
 RMSNorm simplifies LayerNorm by removing the mean statistic, thus saving computation time. Note that when the mean of summed inputs is zero, RMSNorm is exactly equal to LayerNorm.
