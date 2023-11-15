@@ -41,3 +41,12 @@ move away from this initial distribution as training progresses.
 So, layer normalization also makes use of learnable parameters $\gamma$ and $\beta$.
 
 The above **normalizes each individual sample**. There is another normalization called **batch normalization**, which **normalizes each individual feature**, i.e. calculate $\mu$ and $\sigma$ for each individual feature and then normalize.
+
+## Root Mean Square Layer Normalization (RMSNorm)
+
+The success of LayerNorm is attributed to its re-centering and re-scaling. The RMSNorm paper hypothesize that the re-scaling is the reason for success of LayerNorm, rather than re-centering.
+
+Hence, RMSNorm is proposed, which focuses only on re-scaling to normalize each individual sample $x$ with dimension $n$:
+$$\text{RMS}(\vec{x}) = \sqrt{\frac{1}{n} \sum\limits_{i=1}^{n} x_{i}^{2}}$$
+
+RMSNorm simplifies LayerNorm by removing the mean statistic, thus saving computation time. Note that when the mean of summed inputs is zero, RMSNorm is exactly equal to LayerNorm.
