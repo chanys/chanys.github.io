@@ -1,4 +1,8 @@
-# Rotary Position Embedding
+---
+layout: post
+title: Rotary Position Embedding
+---
+
 The rotary position embedding method was introduced in the paper "RoFormer: Enhanced Transformer with Rotary Position Embedding" in April-2021. 
 
 ## Introduction
