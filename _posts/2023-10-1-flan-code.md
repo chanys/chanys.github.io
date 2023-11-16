@@ -153,6 +153,7 @@ def train(params):
 ```
 
 ### Example Inference Method
+Performing inference took about 10G of GPU ram.
 ```
 def inference(params):
     config = PeftConfig.from_pretrained(params.model_dir)
