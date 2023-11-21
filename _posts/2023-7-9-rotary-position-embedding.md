@@ -54,6 +54,7 @@ $$
 
 ### Computational efficiency
 Instead of taking $\mathbf{R}_{\Theta,m}^{d}$ and performing a $d \times d$ matrix multiplication, we note that the roation matrix is sparse, which allows us to do a more computational efficient calculation:
+
 $$
 \mathbf{R}_{\Theta,m}^{d}x =
 \begin{bmatrix} x_1\\x_2\\x_3\\x_4\\ \vdots \\x_{d-1}\\x_{d} \end{bmatrix} \otimes
