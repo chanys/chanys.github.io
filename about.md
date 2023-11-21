@@ -89,16 +89,20 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 * [Holistic Evaluation of Language Models](https://chanys.github.io/holistic-evaluation/): (Nov-2022) A large scale evaluation of 30 language models over a set of 16 scenarios and 7 categories of metrics
 
 ### Improve Efficiency of Language Models
-* [Knowledge Distillation and DistilBERT](https://chanys.github.io/knowledge-distillation/)
-* [Model Quantization](https://chanys.github.io/model-quantization/)
-* [Parameter Efficient Fine Tuning (PEFT)](https://chanys.github.io/peft/)
-* [LoRA](https://chanys.github.io/lora/)
-* [Quantization (16-bit, 8-bit, 4-bit) and QLoRA](https://chanys.github.io/qlora/)
-* [Gradient Check-Pointing](https://chanys.github.io/gradient-checkpointing/)
-* [Key-Value Caching](https://chanys.github.io/kv-caching/)
-* [Multi-query and Grouped Multi-query Attention](https://chanys.github.io/multi-query-attention/)
-* [GPTQ](https://chanys.github.io/gptq/)
-* [Code Example on Instruction Fine-tuning of llama2-7B using LoRA](https://chanys.github.io/flan-code/)
+* Quantization
+   * [Model Quantization](https://chanys.github.io/model-quantization/)
+   * [Quantization (16-bit, 8-bit, 4-bit) and QLoRA](https://chanys.github.io/qlora/)
+   * [GPTQ](https://chanys.github.io/gptq/)
+* PEFT and LoRA
+   * [Parameter Efficient Fine Tuning (PEFT)](https://chanys.github.io/peft/)
+   * [LoRA](https://chanys.github.io/lora/)
+   * [Code Example on Instruction Fine-tuning of llama2-7B using LoRA](https://chanys.github.io/flan-code/)
+* Time Efficency
+   * [Gradient Check-Pointing](https://chanys.github.io/gradient-checkpointing/)
+   * [Key-Value Caching](https://chanys.github.io/kv-caching/)
+   * [Multi-query and Grouped Multi-query Attention](https://chanys.github.io/multi-query-attention/)
+* Others
+   * [Knowledge Distillation and DistilBERT](https://chanys.github.io/knowledge-distillation/)
 
 ### Strategies to Improve Language Models
 * [Techniques to Enable Learning Deep Neural Networks](https://chanys.github.io/techniques-to-enable-deep-nn/): Skipped Connection, Layer Normalization, RMSNorm
@@ -113,8 +117,9 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 * [ColBERT - Passage Search via Contextualized Late Interaction over BERT](https://chanys.github.io/colbert/)
 * [ColBERTv2 - Efficient Passage Retrieval](https://chanys.github.io/colbertv2/)
 * [REALM - Augment Language Models with a Knowledge Retriever](https://chanys.github.io/realm/)
-* [Dense Passage Retrieval (DPR)](https://chanys.github.io/dpr/)
-* [Retrieval-Augmented Generation (RAG)](https://chanys.github.io/rag/)
+* RAG related
+   * [Dense Passage Retrieval (DPR)](https://chanys.github.io/dpr/)
+   * [Retrieval-Augmented Generation (RAG)](https://chanys.github.io/rag/)
 
 
 ## Contact me
