@@ -40,7 +40,7 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 |[XLM](https://chanys.github.io/xlm/)|XLM-100 has 570M|Jan-2019|Meta|Cross-lingual model that uses translation language modeling (TLM) and MLM|
 |[XLM-R](https://chanys.github.io/xlmr/)|270M, 550M|Nov-2019|Meta|Cross-lingual model that uses MLM with more robust training|
 |[ELECTRA](https://chanys.github.io/electra/)|110M, 335M|Mar-2020|Stanford, Google|Introduced "replaced token detection" pretraining, that is more sample efficient than MLM|
-|[DeBERTa]([Oct-2021](https://chanys.github.io/deberta/))|100M|Oct-2021|Microsoft|Keeps the content embeddings separate from the relative position embeddings|
+|[DeBERTa](https://chanys.github.io/deberta/)|100M|Oct-2021|Microsoft|Keeps the content embeddings separate from the relative position embeddings|
 |[DeBERTa-v3](https://chanys.github.io/deberta-v3/)|86M+98M|Mar-2023|Microsoft|Modified the replaced token detection (RTD) objective of ELECTRA, and combined it with the disentangled attention approach of DeBERTa|
 
 ### Decoder Language Models
