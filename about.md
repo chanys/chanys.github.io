@@ -114,6 +114,8 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 * [Self-Consistency](https://chanys.github.io/self-consistency/) as in inference strategy
 * [Big Bird Transformer for Longer Sequences](https://chanys.github.io/big-bird/)
 * [Permutation Language Modeling](https://chanys.github.io/plm/)
+* [Fine-Tuning Language Models for Factuality](https://chanys.github.io/llm-factuality/)
+* [Direct Preference Optimization](https://chanys.github.io/dpo/)
 
 ### Search and Retrieval
 * [Efficient KNN search using product quantization](https://chanys.github.io/knn/)
