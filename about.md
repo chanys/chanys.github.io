@@ -122,7 +122,7 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 * RAG related
    * [Dense Passage Retrieval (DPR)](https://chanys.github.io/dpr/)
    * [Retrieval-Augmented Generation (RAG)](https://chanys.github.io/rag/)
-
+   * [Retrieval-Augmented Dual Instruction Tuning](https://chanys.github.io/radit/)
 
 ## Contact me
 chanys.nlp at gmail.com
