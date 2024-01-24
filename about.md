@@ -59,6 +59,8 @@ Check out [Transformer Architecture Explained](https://chanys.github.io/transfor
 |[U-PaLM](https://chanys.github.io/upalm/)|540B|Oct-2022|Google|Continue training PaLM with the UL2 mixture of denoising pretraining objective|
 |[LLaMA-1](https://chanys.github.io/llama1/)|6.7B - 65B|Feb-2023|Meta|Trained on 1.4T tokens of publicly available texts|
 |[LLaMA-2](https://chanys.github.io/llama2/)|7B - 70B|Jul-2023|Meta|Instruction fine-tuned and RLHF|
+|[Mistral 7B](https://chanys.github.io/mistral/)|7B|Oct-2023|Mistral.ai|Outperforms Llama-2-7B and Llama-2-13B|
+|[Zephyr-7B](https://chanys.github.io/zephyr/)|7B|Oct-2023|Hugging Face|Starts with Mistral-7B, then instruction fine-tuning, then DPO|
 
 ### Encoder-Decoder Language Models
 
