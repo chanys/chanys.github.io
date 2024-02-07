@@ -12,8 +12,8 @@ After my PhD in NLP with [Prof. Ng](https://www.comp.nus.edu.sg/~nght/), I did a
 * My work in word sense disambiguation and MT evaluation metric had also won international benchmark competitions. 
 
 I then worked at Raytheon BBN Technologies for 10 years. Raytheon BBN is a R&D company that was awarded the National Medal of Technology and Innovation in 2013. While at Raytheon BBN, I was serving in multiple parallel capacities for several multi-million NLP projects:
-* Principal investigator in a project funded by DARPA and the Gates Foundation, where we collaborated with external private organizations and universities
-* R&D lead in a challenging multilingual project where we collaborated with external universities
+* Principal investigator in a project funded by DARPA and the Gates Foundation, where we collaborated with external private organizations and universities.
+* R&D lead in a challenging multilingual project where we collaborated with external universities.
 * The creator, architect, and main developer of a deep learning NLP R&D system called NLPLingo used in almost all of Raytheon BBN’s NLP projects, helping to bring in millions of revenue. NLPLingo leverages transformers to perform various NLP tasks such as information extraction, named entity recognition, etc.
 * For 2 years running, I was also selected and served as an expert advisor and judge for Raytheon Innovation Challenge, on topics regarding “AI, ML, and Expert systems for National Security”.
 
