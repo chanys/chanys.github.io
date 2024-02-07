@@ -19,7 +19,7 @@ I then worked at Raytheon BBN Technologies for 10 years. Raytheon BBN is a R&D c
 
 To get out of my comfort zone, I left BBN to join Quattr, which is a startup focusing on applying NLP to tackle Search Engine Optimization (SEO) for corporate clients such as Coursera, Pinterest, Mcafee, etc. At Quattr, I managed the NLP/ML team, where we applied state-of-the-art NLP techniques, transformers, GPT, prompt engineering, etc. to create solutions for search intent discovery, web page topic discovery, automatic content generation, and internal linking among web pages. 
 
-I then moved on to Elemental Cognition (EC). EC is founded by original members of the IBM Watson AI team which won the Jeopardy gameshow, and is funded by Bridgewater and other investors. At EC, I leveraged encoders, GPT, prompt engineering and various transformer models to devise NLP solutions for the biomedical and cyber security domains.
+I then moved on to Elemental Cognition (EC). EC was founded by original members of the IBM Watson AI team which won the Jeopardy gameshow, and is funded by Bridgewater and other investors. At EC, I leveraged encoders, GPT, prompt engineering and various transformer models to devise NLP solutions for the biomedical and cyber security domains.
 
 ## Organization of Blog Posts
 Check out [Transformer Architecture Explained](https://chanys.github.io/transformer-architecture/), then go on to the following.
