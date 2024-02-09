@@ -39,6 +39,8 @@ f_{\{q,k\}}(x_m, m) = \begin{bmatrix} \text{cos }m\theta & \text{-sin }m\theta \
 \begin{bmatrix} x_{m}^{(1)} \\ x_{m}^{(2)}\end{bmatrix}
 $$
 
+In the above, we assume that the embedding vector $x_{m}$ is just 2 dimension in length, and the matrix $W$ is the usual query $q$ or key $k$ in self-attention.
+
 ### Generalization to $d$ dimension
 To generalize the above result from $x_i$ in 2-d to $\mathbb{R}^{d}$, we define the rotation matrix as follows:
 $$
