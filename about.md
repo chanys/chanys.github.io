@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hi! I am Dr. Yee Seng Chan and this is my blog where I write about Artificial Intelligence and Machine Learning, focusing on Natural Language Processing (NLP) and transformers such as BERT, GPT, LLaMA, etc. Throughout my career, I had been an IC, technical lead, manager, PI, and mentor, sometimes serving in multiple parallel capacities. I also have a history of internal and external collaborations (R&D organizations of DoD and National Intelligence, private organizations (e.g. MITRE), and universities).
+Hi! I am Dr. Yee Seng Chan. Here, I write about AI and ML, focusing on NLP and LLMs. Throughout my career, I had been an IC, technical lead, manager, PI, and mentor, sometimes serving in multiple parallel capacities. I also have a history of internal and external collaborations (R&D organizations of DoD and National Intelligence, private organizations (e.g. MITRE), and universities).
+
+I have also created a deep learning NLP toolkit based on PyTorch, which employs BERT, T5, LLaMA, Mistral, etc. for tasks like classification, information extraction, seq2seq generation, instruction fine-tuning, DPO, end-to-end RAG, etc. Explore the toolkit [here](https://github.com/chanys/tnlp).
 
 ## Short Bio
 After my PhD in NLP with [Prof. Ng](https://www.comp.nus.edu.sg/~nght/), I did a postdoc with [Prof. Roth](https://www.linkedin.com/in/dan-roth-8667361/) at UIUC. Over the course of my PhD and postdoc, I published 12 main papers at premier NLP conferences (6 ACL, 3 EMNLP, 1 AAAI, 1 IJCAI, 1 COLING), 1 journal, and a few workshop papers. I am the first author in most of the conference papers.
