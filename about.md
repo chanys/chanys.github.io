@@ -6,8 +6,6 @@ permalink: /about/
 
 Hi! I am Dr. Yee Seng Chan. Here, I write about AI and ML, focusing on NLP and LLMs. Throughout my career, I had been an IC, technical lead, manager, PI, and mentor, sometimes serving in multiple parallel capacities. I also have a history of internal and external collaborations (R&D organizations of DoD and National Intelligence, private organizations (e.g. MITRE), and universities).
 
-I have also created a deep learning NLP toolkit based on PyTorch, which employs BERT, T5, LLaMA, Mistral, etc. for tasks like classification, information extraction, seq2seq generation, instruction fine-tuning, DPO, end-to-end RAG, etc. Explore the toolkit [here](https://github.com/chanys/tnlp).
-
 ## Short Bio
 After my PhD in NLP with [Prof. Ng](https://www.comp.nus.edu.sg/~nght/), I did a postdoc with [Prof. Roth](https://www.linkedin.com/in/dan-roth-8667361/) at UIUC. Over the course of my PhD and postdoc, I published 12 main papers at premier NLP conferences (6 ACL, 3 EMNLP, 1 AAAI, 1 IJCAI, 1 COLING), 1 journal, and a few workshop papers. I am the first author in most of the conference papers.
 * In collaboration with [David Chiang](https://www3.nd.edu/~dchiang/), our ACL paper showed for the first time that word sense information improves state-of-the-art machine translation performance, helping to settle a 10-year long debate within the academic field.
